@@ -1,0 +1,55 @@
+body {
+    font: 16px/1 Helvetica, sans-serif;
+}
+
+
+#photos {
+    float: left;
+    width: 100%;
+}
+
+.photo {
+    float: left;
+    margin: 0 2px 2px 0;
+    overflow: hidden;
+    height: 160px;
+    
+    position: relative;
+    
+            
+}
+
+.photo,
+.photo img {
+    min-width: 160px;
+    max-width: 240px;
+}
+
+.photo a{
+    position: absolute;
+    
+    top: 5px;
+    left: 5px;
+    
+    color: orange;
+    
+    font-size: 22px;
+    
+    text-decoration: none;
+    
+    opacity: 0.50;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.50;
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50); 
+    -khtml-opacity: 0.50; 
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+}
+
+.photo:hover a{
+    opacity: 1.0;
+    filter:alpha(opacity=100);
+    -moz-opacity:1.0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100); 
+    -khtml-opacity: 1.0; 
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
